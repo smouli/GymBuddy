@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942FEC8FE75E3F6039E0E26F /* Pods_GYMBUDDY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B747F93567D3FFC3DC391690 /* Pods_GYMBUDDY.framework */; };
 		D11AC8ED1F720C3400A9C3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */; };
 		D11AC8EF1F720C3400A9C3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */; };
 		D11AC8F21F720C3400A9C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11AC8F01F720C3400A9C3D5 /* Main.storyboard */; };
 		D11AC8F41F720C3400A9C3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11AC8F31F720C3400A9C3D5 /* Assets.xcassets */; };
 		D11AC8F71F720C3500A9C3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11AC8F51F720C3400A9C3D5 /* LaunchScreen.storyboard */; };
+		D11AC9091F735A0600A9C3D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC9081F735A0600A9C3D5 /* HomeViewController.swift */; };
+		D11AC90B1F735A0B00A9C3D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC90A1F735A0B00A9C3D5 /* LoginViewController.swift */; };
+		D11AC9111F735A2000A9C3D5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC9101F735A2000A9C3D5 /* SignUpViewController.swift */; };
+		D11AC9131F735C4B00A9C3D5 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC9121F735C4B00A9C3D5 /* ResetPasswordViewController.swift */; };
+		D11AC9151F73628500A9C3D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D11AC9141F73628500A9C3D5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		521E23A4D2160C99E6625775 /* Pods-GYMBUDDY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYMBUDDY.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYMBUDDY/Pods-GYMBUDDY.release.xcconfig"; sourceTree = "<group>"; };
+		9F4A1C13729DFBD97370EF0F /* Pods-GYMBUDDY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYMBUDDY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYMBUDDY/Pods-GYMBUDDY.debug.xcconfig"; sourceTree = "<group>"; };
+		B747F93567D3FFC3DC391690 /* Pods_GYMBUDDY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYMBUDDY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11AC8E91F720C3400A9C3D5 /* GYMBUDDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYMBUDDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,11 @@
 		D11AC8F31F720C3400A9C3D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D11AC8F61F720C3500A9C3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D11AC8F81F720C3500A9C3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D11AC9081F735A0600A9C3D5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D11AC90A1F735A0B00A9C3D5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D11AC9101F735A2000A9C3D5 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D11AC9121F735C4B00A9C3D5 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		D11AC9141F73628500A9C3D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942FEC8FE75E3F6039E0E26F /* Pods_GYMBUDDY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1192A864066BCF4924905E92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B747F93567D3FFC3DC391690 /* Pods_GYMBUDDY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D11AC8E01F720C3400A9C3D5 = {
 			isa = PBXGroup;
 			children = (
 				D11AC8EB1F720C3400A9C3D5 /* GYMBUDDY */,
 				D11AC8EA1F720C3400A9C3D5 /* Products */,
+				DEAB02E42484A5BCC9A5C46C /* Pods */,
+				1192A864066BCF4924905E92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +79,12 @@
 		D11AC8EB1F720C3400A9C3D5 /* GYMBUDDY */ = {
 			isa = PBXGroup;
 			children = (
+				D11AC9141F73628500A9C3D5 /* GoogleService-Info.plist */,
+				D11AC9121F735C4B00A9C3D5 /* ResetPasswordViewController.swift */,
+				D11AC9081F735A0600A9C3D5 /* HomeViewController.swift */,
 				D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */,
+				D11AC9101F735A2000A9C3D5 /* SignUpViewController.swift */,
+				D11AC90A1F735A0B00A9C3D5 /* LoginViewController.swift */,
 				D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */,
 				D11AC8F01F720C3400A9C3D5 /* Main.storyboard */,
 				D11AC8F31F720C3400A9C3D5 /* Assets.xcassets */,
@@ -64,6 +94,15 @@
 			path = GYMBUDDY;
 			sourceTree = "<group>";
 		};
+		DEAB02E42484A5BCC9A5C46C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F4A1C13729DFBD97370EF0F /* Pods-GYMBUDDY.debug.xcconfig */,
+				521E23A4D2160C99E6625775 /* Pods-GYMBUDDY.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D11AC8FB1F720C3500A9C3D5 /* Build configuration list for PBXNativeTarget "GYMBUDDY" */;
 			buildPhases = (
+				DB5217535440C04495234A32 /* [CP] Check Pods Manifest.lock */,
 				D11AC8E51F720C3400A9C3D5 /* Sources */,
 				D11AC8E61F720C3400A9C3D5 /* Frameworks */,
 				D11AC8E71F720C3400A9C3D5 /* Resources */,
+				D4372340F106972218AFC753 /* [CP] Embed Pods Frameworks */,
+				5C1D61D3076EBD62A47B7075 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +138,7 @@
 				TargetAttributes = {
 					D11AC8E81F720C3400A9C3D5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 65ZG9A9ZUZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D11AC8F71F720C3500A9C3D5 /* LaunchScreen.storyboard in Resources */,
+				D11AC9151F73628500A9C3D5 /* GoogleService-Info.plist in Resources */,
 				D11AC8F41F720C3400A9C3D5 /* Assets.xcassets in Resources */,
 				D11AC8F21F720C3400A9C3D5 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +175,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C1D61D3076EBD62A47B7075 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYMBUDDY/Pods-GYMBUDDY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4372340F106972218AFC753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GYMBUDDY/Pods-GYMBUDDY-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYMBUDDY/Pods-GYMBUDDY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5217535440C04495234A32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GYMBUDDY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D11AC8E51F720C3400A9C3D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D11AC8EF1F720C3400A9C3D5 /* ViewController.swift in Sources */,
+				D11AC9111F735A2000A9C3D5 /* SignUpViewController.swift in Sources */,
 				D11AC8ED1F720C3400A9C3D5 /* AppDelegate.swift in Sources */,
+				D11AC9131F735C4B00A9C3D5 /* ResetPasswordViewController.swift in Sources */,
+				D11AC90B1F735A0B00A9C3D5 /* LoginViewController.swift in Sources */,
+				D11AC9091F735A0600A9C3D5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +364,10 @@
 		};
 		D11AC8FC1F720C3500A9C3D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4A1C13729DFBD97370EF0F /* Pods-GYMBUDDY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 65ZG9A9ZUZ;
 				INFOPLIST_FILE = GYMBUDDY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GYMBUDDY;
@@ -270,8 +378,10 @@
 		};
 		D11AC8FD1F720C3500A9C3D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521E23A4D2160C99E6625775 /* Pods-GYMBUDDY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 65ZG9A9ZUZ;
 				INFOPLIST_FILE = GYMBUDDY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GYMBUDDY;
@@ -299,6 +409,7 @@
 				D11AC8FD1F720C3500A9C3D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
