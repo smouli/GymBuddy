@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3vB-Sr-yOH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wIB-cv-VdX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are logged in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qug-kG-htG">
@@ -25,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fI-jj-9C2">
-                                <rect key="frame" x="135" y="609" width="104" height="38"/>
+                                <rect key="frame" x="135" y="414" width="104" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <state key="normal" title="Log Out">
@@ -35,14 +39,67 @@
                                     <action selector="logOutActionWithSender:" destination="aG6-mC-CQC" eventType="touchUpInside" id="CzA-2v-IqB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7q-cd-IZg">
+                                <rect key="frame" x="132" y="127" width="122" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="fc7-dh-pU0" kind="show" id="Ahb-TW-mk6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gvt-dd-avk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2149.5999999999999" y="552.77361319340332"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="zPc-5L-NOX">
+            <objects>
+                <viewControllerPlaceholder id="ek7-Qg-dDZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBn-aH-liH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2716" y="129"/>
+        </scene>
+        <!--TabHomePage-->
+        <scene sceneID="phQ-Vw-x1f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabHomePage" id="bsx-hq-DYv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="nUc-56-FqS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tO-JD-wdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3869" y="215"/>
+        </scene>
+        <!--Friends-->
+        <scene sceneID="fP3-Vd-kAr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Friends" id="79j-jv-c88" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wNG-AW-Lor"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNk-zX-WQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3869" y="870"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="gCY-Gf-ZuT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="gkv-dH-eQ8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="GUe-oE-UOk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQh-EU-WVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3866" y="1538"/>
+        </scene>
+        <!--TabBarControll-->
+        <scene sceneID="j99-8d-xuh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBarControll" id="fc7-dh-pU0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFZ-cB-NjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2919" y="541"/>
         </scene>
     </scenes>
 </document>
