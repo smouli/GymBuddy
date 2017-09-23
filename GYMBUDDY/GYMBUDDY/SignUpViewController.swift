@@ -2,14 +2,17 @@
 //
 
 import UIKit
+import CoreData
 import Firebase
-import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
     //Outlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    
     
     //Sign Up Action for email
     @IBAction func createAccountAction(_ sender: AnyObject) {
@@ -27,10 +30,10 @@ class SignUpViewController: UIViewController {
                 if error == nil {
                     print("You have successfully signed up")
                     //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
+                    self.post()
                     
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
                     self.present(vc!, animated: true, completion: nil)
-                    
                 } else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                     
@@ -41,6 +44,14 @@ class SignUpViewController: UIViewController {
                 }
             }
         }
+    }
+    func post() {
+        let fName = firstNameTextField.text!
+        let lName = lastNameTextField.text!
+        let uid = Auth.auth().currentUser?.uid
+        let name : [String : String] = ["First Name" : fName, "Last Name" : lName]
+        let databaseRef = Database.database().reference()
+        databaseRef.child("Users").child(uid!).setValue(name)
     }
 }
 
