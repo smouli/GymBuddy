@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+
 
 class TabBarHomePageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let list = ["Preset Workout 1", "Preset Workout 2", "Preset Workout 3", "Preset Workout 4", "Preset Workout 5"]
     var myIndex = 0
+    
+    
+    
+    
+    
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -37,6 +46,7 @@ class TabBarHomePageViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         
         
         

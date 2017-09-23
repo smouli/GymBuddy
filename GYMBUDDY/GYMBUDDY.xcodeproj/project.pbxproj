@@ -13,6 +13,7 @@
 		BBCB3E5D1F74BA3700161D2D /* TabBarControll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCB3E5C1F74BA3700161D2D /* TabBarControll.storyboard */; };
 		BBCB3E611F74BBC300161D2D /* TabFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCB3E601F74BBC300161D2D /* TabFriends.storyboard */; };
 		BBCB3E631F74BF3E00161D2D /* TabBarHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB3E621F74BF3E00161D2D /* TabBarHomePageViewController.swift */; };
+		BBCB3E651F75D27600161D2D /* ExtendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB3E641F75D27600161D2D /* ExtendedViewController.swift */; };
 		D11AC8ED1F720C3400A9C3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */; };
 		D11AC8EF1F720C3400A9C3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */; };
 		D11AC8F21F720C3400A9C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11AC8F01F720C3400A9C3D5 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		BBCB3E5C1F74BA3700161D2D /* TabBarControll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarControll.storyboard; sourceTree = "<group>"; };
 		BBCB3E601F74BBC300161D2D /* TabFriends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabFriends.storyboard; sourceTree = "<group>"; };
 		BBCB3E621F74BF3E00161D2D /* TabBarHomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarHomePageViewController.swift; sourceTree = "<group>"; };
+		BBCB3E641F75D27600161D2D /* ExtendedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedViewController.swift; sourceTree = "<group>"; };
 		D11AC8E91F720C3400A9C3D5 /* GYMBUDDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYMBUDDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				D1D5877D1F74AFDE007EF939 /* HomePage.storyboard */,
 				BBCB3E5C1F74BA3700161D2D /* TabBarControll.storyboard */,
 				BBCB3E541F74B9D500161D2D /* TabHomePage.storyboard */,
+				BBCB3E641F75D27600161D2D /* ExtendedViewController.swift */,
 				BBCB3E621F74BF3E00161D2D /* TabBarHomePageViewController.swift */,
 				BBCB3E601F74BBC300161D2D /* TabFriends.storyboard */,
 				BBCB3E591F74B9F800161D2D /* Settings.storyboard */,
@@ -251,7 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -268,6 +271,7 @@
 				D11AC90B1F735A0B00A9C3D5 /* LoginViewController.swift in Sources */,
 				D11AC9091F735A0600A9C3D5 /* HomeViewController.swift in Sources */,
 				BBCB3E631F74BF3E00161D2D /* TabBarHomePageViewController.swift in Sources */,
+				BBCB3E651F75D27600161D2D /* ExtendedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
