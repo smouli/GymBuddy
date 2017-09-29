@@ -32,7 +32,7 @@ class TabBarHomePageViewController: UIViewController, UITableViewDelegate, UITab
                 WorkoutNames.append((workout as AnyObject).key)
                 self.WorkoutNames.append((workout as AnyObject).key)
             }
-            
+            //self.TableView.backgroundColor = UIColor.green
             self.TableView.reloadData()
         
         })
@@ -76,6 +76,8 @@ class TabBarHomePageViewController: UIViewController, UITableViewDelegate, UITab
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = WorkoutNames[indexPath.row]
         
+        
+        //cell.backgroundColor = UIColor.lightGray
         return (cell)
     }
     

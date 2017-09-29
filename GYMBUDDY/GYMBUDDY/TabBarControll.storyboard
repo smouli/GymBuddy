@@ -13,10 +13,11 @@
         <scene sceneID="Z33-il-Z6Q">
             <objects>
                 <tabBarController id="zvu-kh-MKw" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="pWc-5P-aHV">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="pWc-5P-aHV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="bsx-hq-DYv" kind="relationship" relationship="viewControllers" id="vCy-HF-Eac"/>
@@ -32,7 +33,7 @@
         <scene sceneID="phQ-Vw-x1f">
             <objects>
                 <viewControllerPlaceholder storyboardName="TabHomePage" id="bsx-hq-DYv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nUc-56-FqS"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Item" id="nUc-56-FqS"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tO-JD-wdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
