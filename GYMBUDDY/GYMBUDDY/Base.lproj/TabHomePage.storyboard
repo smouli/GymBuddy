@@ -46,6 +46,7 @@
                     <navigationItem key="navigationItem" title="HomePage" id="Dcl-HM-ubB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="TableView" destination="cT3-uI-DUh" id="BNx-rI-eSa"/>
                         <segue destination="Aev-w4-ivn" kind="show" identifier="segue1" id="dMk-A4-rMF"/>
                     </connections>
                 </viewController>
@@ -64,15 +65,6 @@
                     <view key="view" contentMode="scaleToFill" id="Fge-u3-cG5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3M-FT-zsb">
-                                <rect key="frame" x="166" y="274" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
