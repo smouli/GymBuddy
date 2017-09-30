@@ -14,14 +14,19 @@ import FirebaseDatabase
 
 class TabBarHomePageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+<<<<<<< HEAD
     @IBOutlet weak var TableView: UITableView!
     var WorkoutNames = [String]()
     
+=======
+    let list = ["Preset Workout 1", "Preset Workout 2", "Preset Workout 3", "Preset Workout 4", "Preset Workout 5"]
+>>>>>>> 287e12bf49a0617444a35d5cfc19ff9321233f4a
     var myIndex = 0
     
     
     
     
+<<<<<<< HEAD
     override func viewDidLoad() {
         super.viewDidLoad()
         let ref = Database.database().reference().child("Workouts")
@@ -61,28 +66,42 @@ class TabBarHomePageViewController: UIViewController, UITableViewDelegate, UITab
     
     
     
+=======
+>>>>>>> 287e12bf49a0617444a35d5cfc19ff9321233f4a
     
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+<<<<<<< HEAD
         //return(list.count)
         return(WorkoutNames.count)
+=======
+        return(list.count)
+>>>>>>> 287e12bf49a0617444a35d5cfc19ff9321233f4a
     }
     
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+<<<<<<< HEAD
         
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = WorkoutNames[indexPath.row]
         
         
         //cell.backgroundColor = UIColor.lightGray
+=======
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = list[indexPath.row]
+>>>>>>> 287e12bf49a0617444a35d5cfc19ff9321233f4a
         return (cell)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+<<<<<<< HEAD
         
+=======
+>>>>>>> 287e12bf49a0617444a35d5cfc19ff9321233f4a
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue1", sender: self)
     }
@@ -90,7 +109,21 @@ class TabBarHomePageViewController: UIViewController, UITableViewDelegate, UITab
     
     
     
+<<<<<<< HEAD
     
+=======
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+
+        
+        
+        
+
+        // Do any additional setup after loading the view.
+    }
+
+>>>>>>> 287e12bf49a0617444a35d5cfc19ff9321233f4a
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
