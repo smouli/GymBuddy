@@ -16,6 +16,7 @@ class Home1ViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var TableView: UITableView!
     let list1 = ["milk", "honey", "bread"];
     var WorkoutNames = [String]()
+    var myIndex1 = 0
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //return (list1.count);
@@ -38,6 +39,11 @@ class Home1ViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex1 = indexPath.row
+        performSegue(withIdentifier: "segueHome2nd", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let ref = Database.database().reference().child("Workouts")
@@ -52,9 +58,32 @@ class Home1ViewController: UIViewController, UITableViewDataSource, UITableViewD
             self.TableView.reloadData()
             
         })
+        
+                 ref.observeSingleEvent(of: .childAdded, with: { (snapshot) in
+                    // Get user value
+                    if let userDict = snapshot.value as? [String:AnyObject] {
+                        print(userDict)
+                        //Do not cast print it directly may be score is Int not string
+                        for (key, _) in userDict {
+                            print(key)
+                            let workout:NSObject = userDict[key] as! NSObject
+        
+                            let firstName:String! = workout.value(forKey: "name") as? String
+        
+                            //print(firstName)
+        
+                        }
+        
+                    }
+        
+                 })
+
+        
+        
     }
     
     
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
