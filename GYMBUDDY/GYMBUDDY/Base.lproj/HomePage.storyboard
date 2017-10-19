@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -129,7 +129,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Homepage" id="FvM-hD-suf"/>
                     <connections>
-                        <outlet property="TableView" destination="7FV-cL-ZlE" id="N0n-QR-TUM"/>
+                        <outlet property="TableView" destination="7FV-cL-ZlE" id="lX2-9q-MT0"/>
                         <segue destination="ksV-dQ-CmU" kind="show" identifier="segueHome2nd" id="JjO-am-nS3"/>
                     </connections>
                 </viewController>
@@ -160,10 +160,13 @@
                             <outlet property="delegate" destination="ksV-dQ-CmU" id="7qk-7N-Ygo"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="Hi" destination="D06-d7-jFX" id="ZlU-rP-JYD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGB-FI-y0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5570" y="-235"/>
+            <point key="canvasLocation" x="5578" y="-234"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3gb-yj-dqn">

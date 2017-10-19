@@ -11,9 +11,11 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+
 class Home1ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var TableView: UITableView!
+    
     let list1 = ["milk", "honey", "bread"];
     var WorkoutNames = [String]()
     var myIndex1 = 0
