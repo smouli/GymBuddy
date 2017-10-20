@@ -64,15 +64,15 @@ class Home1ViewController: UIViewController, UITableViewDataSource, UITableViewD
                  ref.observeSingleEvent(of: .childAdded, with: { (snapshot) in
                     // Get user value
                     if let userDict = snapshot.value as? [String:AnyObject] {
-                        print(userDict)
+//                        print(userDict)
                         //Do not cast print it directly may be score is Int not string
                         for (key, _) in userDict {
-                            print(key)
+//                            print(key)
                             let workout:NSObject = userDict[key] as! NSObject
         
                             let firstName:String! = workout.value(forKey: "name") as? String
         
-                            //print(firstName)
+                            print(firstName)
         
                         }
         
