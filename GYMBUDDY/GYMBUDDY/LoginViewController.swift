@@ -10,6 +10,21 @@ class LoginViewController: UIViewController {
 //Outlets
 @IBOutlet weak var emailTextField: UITextField!
 @IBOutlet weak var passwordTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // IF THE USER IS ALREADY SIGNED IN SWITCH TO MAIN LAB ROOM
+        
+        Auth.auth().addStateDidChangeListener() { auth, user in
+            // 2
+            if user != nil {
+                // 3
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                self.present(vc!, animated: true, completion: nil)
+            }
+        }
+    }
 
 
     //Login Action
