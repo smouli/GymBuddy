@@ -12,21 +12,30 @@ import FirebaseAuth
 import FirebaseDatabase
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class UserWorkoutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var list = [String]()
     var data = [String]()
     var ref: DatabaseReference?
     var databaseHandle: DatabaseHandle?
 
+    @IBOutlet weak var nameField: UITextField!
     @IBAction func submit(_ sender: Any) {
-        dump(data)
+        self.post()
     }
     
     @IBOutlet weak var tableView: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
     }
-    
+    func post(){
+        let uid = Auth.auth().currentUser?.uid
+        let exer1 : [String : [String]] = [nameField.text! : data]
+        let databaseRef = Database.database().reference()
+        //databaseRef.child("Users").child(uid!).child("User Workouts").setValue(exer1)
+        databaseRef.child("Users").child(uid!).child("User Workouts").updateChildValues(exer1)
+        
+        dump(data)
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell_1")
         cell.textLabel?.text = list[indexPath.row]
