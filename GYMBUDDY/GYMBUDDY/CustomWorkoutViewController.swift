@@ -24,7 +24,7 @@ class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITa
         
         return(WorkoutNames.count)
     }
-    
+   
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cellcustom")
         var workout = String()
@@ -65,11 +65,29 @@ class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITa
         
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        performSegue(withIdentifier: "custom1m", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "custom1m" {
+            
+            if let indexPath = self.TableView.indexPathForSelectedRow {
+                let controller = segue.destination as! CustomExerciseDetailedViewController
+                controller.currentWorkout1 = WorkoutNames[indexPath.row]
+                
+            }
+        }
+    }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*
