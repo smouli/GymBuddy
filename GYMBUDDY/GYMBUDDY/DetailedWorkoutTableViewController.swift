@@ -69,6 +69,17 @@ class DetailedWorkoutTableViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue3rd" {
+            
+            if let indexPath = self.Hi.indexPathForSelectedRow {
+                let controller = segue.destination as! ExcerciseViewController
+                    controller.excerciseName = WorkoutNames[indexPath.row]
+                    controller.workoutName = currentWorkout
+            }
+        }
+    }
+    
              
 
   
