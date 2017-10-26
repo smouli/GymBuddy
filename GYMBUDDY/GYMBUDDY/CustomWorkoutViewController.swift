@@ -17,7 +17,7 @@ class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITa
     var FilteredWorkoutNames = [String]()
     var myIndex1 = 0
     
-    @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var TableView1: UITableView!
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //return (list1.count);
@@ -44,7 +44,7 @@ class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITa
                 WorkoutNames.append((workout as AnyObject).key)
                 self.WorkoutNames.append((workout as AnyObject).key)
             }
-            self.TableView.reloadData()
+            self.TableView1.reloadData()
             
         })
         
@@ -53,8 +53,6 @@ class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITa
             if let userDict = snapshot.value as? [String:AnyObject] {
                 for (key, _) in userDict {
                     let workout:NSObject = userDict[key] as! NSObject
-                    let firstName:String! = workout.value(forKey: "name") as? String
-                    print(firstName)
                     
                 }
             }
@@ -73,7 +71,7 @@ class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "custom1m" {
             
-            if let indexPath = self.TableView.indexPathForSelectedRow {
+            if let indexPath = self.TableView1.indexPathForSelectedRow {
                 let controller = segue.destination as! CustomExerciseDetailedViewController
                 controller.currentWorkout1 = WorkoutNames[indexPath.row]
                 
