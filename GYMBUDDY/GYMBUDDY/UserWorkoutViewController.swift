@@ -15,14 +15,31 @@ import FirebaseDatabase
 class UserWorkoutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var list = [String]()
     var data = [String]()
+    var sets = 0
     var ref: DatabaseReference?
     var databaseHandle: DatabaseHandle?
-
+    var string = ""
+    
     @IBOutlet weak var nameField: UITextField!
+    
     @IBAction func submit(_ sender: Any) {
         self.post()
     }
     
+    @IBOutlet weak var counter_label: UILabel!
+    @IBAction func plus_button(_ sender: Any) {
+        sets = sets + 1
+        string = String(sets)
+        counter_label.text? = string
+    }
+    
+    @IBAction func minus_button(_ sender: Any) {
+        if (sets > 0){
+            sets = sets - 1
+        }
+        string = String(sets)
+        counter_label.text? = string
+    }
     @IBOutlet weak var tableView: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
@@ -30,9 +47,10 @@ class UserWorkoutViewController: UIViewController, UITableViewDelegate, UITableV
     func post(){
         let uid = Auth.auth().currentUser?.uid
         let exer1 : [String : [String]] = [nameField.text! : data]
+        let exer2 : [String : String] = ["Reps" : "Reps: " + string, "Sets: " : "Sets: " + string]
         let databaseRef = Database.database().reference()
-        //databaseRef.child("Users").child(uid!).child("User Workouts").setValue(exer1)
         databaseRef.child("Users").child(uid!).child("User Workouts").updateChildValues(exer1)
+        databaseRef.child("Users").child(uid!).child("User Workouts").child(nameField.text!).updateChildValues(exer2)
         
         dump(data)
     }

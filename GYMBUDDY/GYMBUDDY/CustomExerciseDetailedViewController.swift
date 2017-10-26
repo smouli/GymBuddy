@@ -32,7 +32,35 @@ class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSou
         cell.textLabel?.text = workout
         return (cell)
     }
+ 
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        
+        if editingStyle == UITableViewCellEditingStyle.delete{
+            
+            let workout = WorkoutNames[indexPath.row]
+            
+            deletePost(a: workout)
+            
+            WorkoutNames.remove(at: indexPath.row)
+            
+            tableView.reloadData()
+            
+        }
+    }
+    
+    
+    func deletePost(a: String){
+        
+        let uid = Auth.auth().currentUser?.uid
+        
+        let ref = Database.database().reference().child("Users").child(uid!).child("User Workouts").child(a)
+        
+        ref.removeValue { error, _ in
+            print(error)
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let uid = Auth.auth().currentUser?.uid
