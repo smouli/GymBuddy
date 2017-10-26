@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,6 +52,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="2Ao-3M-9Rs" eventType="touchUpInside" id="rJp-4u-bb5"/>
+                                    <action selector="tappednotif:" destination="2Ao-3M-9Rs" eventType="touchUpInside" id="PLi-ad-ayG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyj-H7-cqE">
@@ -258,7 +259,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AEl-Or-0Jh"/>
+        <segue reference="PQJ-aS-x9p"/>
         <segue reference="gcb-Uy-DyJ"/>
         <segue reference="suG-DU-X8g"/>
     </inferredMetricsTieBreakers>
