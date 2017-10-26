@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +36,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logOutActionWithSender:" destination="aG6-mC-CQC" eventType="touchUpInside" id="CzA-2v-IqB"/>
+                                    <action selector="logout" destination="aG6-mC-CQC" eventType="touchUpInside" id="YIj-jY-70Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMr-GE-KC5">
@@ -44,6 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter App"/>
                                 <connections>
+                                    <action selector="SendNotif:" destination="aG6-mC-CQC" eventType="touchUpInside" id="VLr-CR-5PH"/>
                                     <segue destination="3uS-qi-x54" kind="show" id="0C3-t8-16K"/>
                                 </connections>
                             </button>
