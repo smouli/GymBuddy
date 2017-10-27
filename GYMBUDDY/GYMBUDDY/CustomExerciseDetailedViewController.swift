@@ -11,6 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+
 class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
     @IBOutlet weak var tableview97: UITableView!
@@ -32,6 +33,9 @@ class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSou
         cell.textLabel?.text = workout
         return (cell)
     }
+ 
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,20 +51,6 @@ class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSou
             self.tableview97.reloadData()
             dump(WorkoutNames)
         })
-        
-        ref.observeSingleEvent(of: .childAdded, with: { (snapshot) in
-            // Get user value
-            if let userDict = snapshot.value as? [String:AnyObject] {
-                for (key, _) in userDict {
-                    let workout:NSObject = userDict[key] as! NSObject
-                    let firstName:String! = workout.value(forKey: "name") as? String
-                    print(firstName)
-                    
-                }
-            }
-            
-        })
-        
         
         
     }
