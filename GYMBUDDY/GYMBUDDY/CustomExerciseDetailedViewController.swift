@@ -11,6 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+
 class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
     @IBOutlet weak var tableview97: UITableView!
@@ -34,33 +35,8 @@ class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSou
     }
  
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
-        
-        if editingStyle == UITableViewCellEditingStyle.delete{
-            
-            let workout = WorkoutNames[indexPath.row]
-            
-            deletePost(a: workout)
-            
-            WorkoutNames.remove(at: indexPath.row)
-            
-            tableView.reloadData()
-            
-        }
-    }
     
     
-    func deletePost(a: String){
-        
-        let uid = Auth.auth().currentUser?.uid
-        
-        let ref = Database.database().reference().child("Users").child(uid!).child("User Workouts").child(a)
-        
-        ref.removeValue { error, _ in
-            print(error)
-        }
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let uid = Auth.auth().currentUser?.uid
@@ -75,20 +51,6 @@ class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSou
             self.tableview97.reloadData()
             dump(WorkoutNames)
         })
-        
-        ref.observeSingleEvent(of: .childAdded, with: { (snapshot) in
-            // Get user value
-            if let userDict = snapshot.value as? [String:AnyObject] {
-                for (key, _) in userDict {
-                    let workout:NSObject = userDict[key] as! NSObject
-                    let firstName:String! = workout.value(forKey: "name") as? String
-                    print(firstName)
-                    
-                }
-            }
-            
-        })
-        
         
         
     }

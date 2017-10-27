@@ -25,8 +25,13 @@ class UserWorkoutViewController: UIViewController, UITableViewDelegate, UITableV
     @IBAction func submit(_ sender: Any) {
         self.post()
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
     
     @IBOutlet weak var counter_label: UILabel!
+    
     @IBAction func plus_button(_ sender: Any) {
         sets = sets + 1
         string = String(sets)
@@ -44,6 +49,7 @@ class UserWorkoutViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
     }
+    
     func post(){
         let uid = Auth.auth().currentUser?.uid
         let exer1 : [String : [String]] = [nameField.text! : data]
@@ -54,6 +60,7 @@ class UserWorkoutViewController: UIViewController, UITableViewDelegate, UITableV
         
         dump(data)
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell_1")
         cell.textLabel?.text = list[indexPath.row]

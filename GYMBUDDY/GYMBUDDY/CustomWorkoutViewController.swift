@@ -10,12 +10,14 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import MessageUI
 
-class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMessageComposeViewControllerDelegate  {
 
     var WorkoutNames = [String]()
     var FilteredWorkoutNames = [String]()
     var myIndex1 = 0
+    var deletedPost = ""
     
     @IBOutlet weak var TableView1: UITableView!
     
@@ -31,6 +33,58 @@ class CustomWorkoutViewController: UIViewController, UITableViewDataSource, UITa
         workout = WorkoutNames[indexPath.row]
         cell.textLabel?.text = workout
         return (cell)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        
+        if editingStyle == UITableViewCellEditingStyle.delete{
+            
+            let workout = WorkoutNames[indexPath.row]
+            
+            deletedPost = workout
+            deletePost(a: workout)
+            
+            WorkoutNames.remove(at: indexPath.row)
+            
+            tableView.reloadData()
+            
+        }
+    }
+    
+    
+    func deletePost(a: String){
+        
+        let uid = Auth.auth().currentUser?.uid
+        
+        let ref = Database.database().reference().child("Users").child(uid!).child("User Workouts").child(a)
+        
+        ref.removeValue { error, _ in
+            print("error")
+        }
+        sendSMSText(phoneNumber: "2039092620")
+    }
+    
+    
+   
+ 
+    
+    func sendSMSText(phoneNumber: String) {
+        if (MFMessageComposeViewController.canSendText()) {
+            let controller = MFMessageComposeViewController()
+            controller.body = "Just deleted a workout: " + deletedPost
+            controller.recipients = [phoneNumber]
+            controller.messageComposeDelegate = self as! MFMessageComposeViewControllerDelegate
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        //... handle sms screen actions
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func viewDidLoad() {

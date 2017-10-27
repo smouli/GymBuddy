@@ -14,6 +14,10 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
     //Sign Up Action for email
     @IBAction func createAccountAction(_ sender: AnyObject) {
         if emailTextField.text == "" {
