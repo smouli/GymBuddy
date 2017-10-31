@@ -620,10 +620,9 @@
             </objects>
             <point key="canvasLocation" x="1776.8" y="1436.1319340329835"/>
         </scene>
-        <!--Item-->
+        <!--Finder-->
         <scene sceneID="9JK-hL-XUz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eRy-Q1-l9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="vm2-ld-Yty" customClass="BusinessViewController" customModule="GYMBUDDY" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hTI-K0-uvc"/>
@@ -738,11 +737,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Lqk-b3-GTK"/>
+                    <tabBarItem key="tabBarItem" title="Finder" id="Lqk-b3-GTK"/>
                     <connections>
                         <outlet property="tableView1" destination="h3T-qR-fHs" id="Y9H-sV-S7O"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRy-Q1-l9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3189.5999999999999" y="1599.8500749625189"/>
         </scene>
