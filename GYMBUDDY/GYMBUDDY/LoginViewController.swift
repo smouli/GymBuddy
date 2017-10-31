@@ -3,19 +3,31 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import UserNotifications
 
 class LoginViewController: UIViewController {
 
-
 //Outlets
+    @IBAction func tappednotif(_ sender: AnyObject) {
+        let content = UNMutableNotificationContent()
+        content.title = "Daily Workout Reminder"
+        content.subtitle = "Gym Buddy"
+        content.body = "Its time to workout"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+    }
 @IBOutlet weak var emailTextField: UITextField!
 @IBOutlet weak var passwordTextField: UITextField!
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // IF THE USER IS ALREADY SIGNED IN SWITCH TO MAIN LAB ROOM
-        
+    
         Auth.auth().addStateDidChangeListener() { auth, user in
             // 2
             if user != nil {
@@ -25,6 +37,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
 
 
     //Login Action
