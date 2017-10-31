@@ -17,7 +17,7 @@ import UIKit
 
 class BusinessViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
-    var businesses: [Business]!
+    var businesses: [Business]!;
     var output: [Business]!
     
    
@@ -36,7 +36,7 @@ class BusinessViewController: UIViewController, UITableViewDataSource, UITableVi
         searchBar.delegate = self as? UISearchBarDelegate
         searchBar.sizeToFit()
         navigationItem.titleView = searchBar
-        //tableView.reloadData()
+        //tableView1.reloadData()
         //searchBar.delegate = self
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshBusinesses(_:)), for: UIControlEvents.valueChanged)
@@ -46,7 +46,7 @@ class BusinessViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func refreshBusinesses(_ refreshControl: UIRefreshControl) {
-        businesses.searchWithTerm(term: "Gym", completion: { (businesses: [Business]?, error: Error?) -> Void in
+         Business.searchWithTerm("Gym", completion: { (businesses: [Business]?, error: Error?) -> Void in
             
             self.businesses = businesses
             self.output = businesses
@@ -74,7 +74,7 @@ class BusinessViewController: UIViewController, UITableViewDataSource, UITableVi
      print(business.address!)
      }
      }
-     */
+    */
     
     
     override func didReceiveMemoryWarning() {
@@ -104,7 +104,7 @@ class BusinessViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
-        Business.searchWithTerm(term: searchBar.text!, completion: { (businesses: [Business]?, error: Error?) -> Void in
+        Business.searchWithTerm(searchBar.text!, completion: { (businesses: [Business]?, error: Error?) -> Void in
             
             self.businesses = businesses
             self.tableView1.reloadData()
@@ -131,5 +131,5 @@ class BusinessViewController: UIViewController, UITableViewDataSource, UITableVi
      }
      */
     
-    
 }
+

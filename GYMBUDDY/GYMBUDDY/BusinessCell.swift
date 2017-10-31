@@ -21,12 +21,45 @@ class BusinessCell: UITableViewCell {
     var business: Business! {
         didSet {
             nameLabel.text = business.name
-            thumbImageView.setImageWith(business.imageURL!)
+            let session = URLSession(configuration: .default)
+            
+            //creating a dataTask
+            let getImageFromUrl = session.dataTask(with: business.imageURL!) { (data, response, error) in
+                
+                //if there is any error
+                if let e = error {
+                    //displaying the message
+                    print("Error Occurred: \(e)")
+                    
+                } else {
+                    //in case of now error, checking wheather the response is nil or not
+                    if (response as? HTTPURLResponse) != nil {
+                        
+                        //checking if the response contains an image
+                        if let imageData = data {
+                            
+                            //getting the image
+                            let image = UIImage(data: imageData)
+                            
+                            //displaying the image
+                            self.thumbImageView.image = image
+                            
+                        } else {
+                            print("Image file is currupted")
+                        }
+                    } else {
+                        print("No response from server")
+                    }
+                }
+            }
+            
+            //starting the download task
+            getImageFromUrl.resume()
             categoriesLabel.text = business.categories
             addressLabel.text = business.address
             reviewsCountLabel.text =
             "\(business.reviewCount!) Reviews"
-            ratingImageView.setImageWith(business.ratingImageURL!)
+            //ratingImageView?.setImageWith(business.ratingImageURL!)as AnyObject?
             distanceLabel.text = business.distance
         }
     }

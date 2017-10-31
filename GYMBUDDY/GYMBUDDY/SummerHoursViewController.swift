@@ -31,7 +31,7 @@ class SummerHoursViewController: UIViewController, UIPickerViewDelegate, UIPicke
         return corec[row]
     }
     
-    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+    open func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
         return corec.count;
     }
     

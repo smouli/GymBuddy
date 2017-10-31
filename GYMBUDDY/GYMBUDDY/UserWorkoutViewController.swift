@@ -80,7 +80,7 @@ class UserWorkoutViewController: UIViewController, UITableViewDelegate, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func logOutAction(sender: AnyObject) {
+    @IBAction func logOutAction(_ sender: AnyObject) {
         
     }
 

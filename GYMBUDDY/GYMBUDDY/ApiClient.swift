@@ -1,7 +1,4 @@
 import UIKit
-
-import AFNetworking
-import BDBOAuth1Manager
 // You can register for Yelp API keys here: http://www.yelp.com/developers/manage_api_keys
 let yelpConsumerKey = "vxKwwcR_NMQ7WaEiQBK_CA"
 let yelpConsumerSecret = "33QCvh5bIF5jIHR5klQr7RtBDhQ"
@@ -15,14 +12,11 @@ enum YelpSortMode: Int {
 class ApiClient: BDBOAuth1RequestOperationManager {
     var accessToken: String!
     var accessSecret: String!
-    
     //MARK: Shared Instance
     
     static let sharedInstance = ApiClient(consumerKey: yelpConsumerKey, consumerSecret: yelpConsumerSecret, accessToken: yelpToken, accessSecret: yelpTokenSecret)
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+    
     
     init(consumerKey key: String!, consumerSecret secret: String!, accessToken: String!, accessSecret: String!) {
         self.accessToken = accessToken
@@ -32,6 +26,10 @@ class ApiClient: BDBOAuth1RequestOperationManager {
         
         let token = BDBOAuth1Credential(token: accessToken, secret: accessSecret, expiration: nil)
         self.requestSerializer.saveAccessToken(token)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func searchWithTerm(_ term: String, completion: @escaping ([Business]?, Error?) -> Void) -> AFHTTPRequestOperation {
@@ -63,7 +61,7 @@ class ApiClient: BDBOAuth1RequestOperationManager {
                             if let response = response as? [String: Any]{
                                 let dictionaries = response["businesses"] as? [NSDictionary]
                                 if dictionaries != nil {
-                                    completion(Business.businesses(array: dictionaries!), nil)
+                                    completion(Business.businesses(dictionaries!), nil)
                                 }
                             }
         },
