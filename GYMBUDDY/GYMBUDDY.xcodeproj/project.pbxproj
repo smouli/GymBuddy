@@ -7,12 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		942FEC8FE75E3F6039E0E26F /* Pods_GYMBUDDY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B747F93567D3FFC3DC391690 /* Pods_GYMBUDDY.framework */; };
+		0C645E6D442FFC3C2F41562C /* Pods_GYMBUDDY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B747F93567D3FFC3DC391690 /* Pods_GYMBUDDY.framework */; };
 		9804E3641F9860AA007D1173 /* DetailedWorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804E3621F9860AA007D1173 /* DetailedWorkoutTableViewController.swift */; };
 		9804E3651F9860AA007D1173 /* Home1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804E3631F9860AA007D1173 /* Home1ViewController.swift */; };
-		9804E3671F98622B007D1173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9804E3661F98622B007D1173 /* GoogleService-Info.plist */; };
+		BB85CEA51FA7FF2C0026C903 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D5877D1F74AFDE007EF939 /* HomePage.storyboard */; };
+		BB85CEA61FA8000F0026C903 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33E3B81FA1981D0067EEEA /* BusinessViewController.swift */; };
+		BB85CEA71FA800130026C903 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33E3B61FA197430067EEEA /* BusinessCell.swift */; };
+		BB85CEA81FA800160026C903 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB33E3B41FA196D40067EEEA /* Business.swift */; };
+		BB85CEAA1FA8003B0026C903 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2E071FA1916600B52CA5 /* ApiClient.swift */; };
+		BB85CF5C1FA80A6A0026C903 /* BDBOAuth1RequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85CF501FA80A6A0026C903 /* BDBOAuth1RequestOperationManager.m */; };
+		BB85CF5D1FA80A6A0026C903 /* BDBOAuth1RequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85CF521FA80A6A0026C903 /* BDBOAuth1RequestSerializer.m */; };
+		BB85CF5E1FA80A6A0026C903 /* BDBOAuth1SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85CF541FA80A6A0026C903 /* BDBOAuth1SessionManager.m */; };
+		BB85CF5F1FA80A6A0026C903 /* NSDictionary+BDBOAuth1Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85CF571FA80A6A0026C903 /* NSDictionary+BDBOAuth1Manager.m */; };
+		BB85CF601FA80A6A0026C903 /* NSString+BDBOAuth1Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85CF591FA80A6A0026C903 /* NSString+BDBOAuth1Manager.m */; };
+		BB85CF611FA80A6A0026C903 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BB85CF5A1FA80A6A0026C903 /* LICENSE */; };
+		BB85CF621FA80A6A0026C903 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB85CF5B1FA80A6A0026C903 /* README.md */; };
+		BB85D0591FA80ED00026C903 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0341FA80ED00026C903 /* AFHTTPSessionManager.m */; };
+		BB85D05A1FA80ED00026C903 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0371FA80ED00026C903 /* AFNetworkReachabilityManager.m */; };
+		BB85D05B1FA80ED00026C903 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0391FA80ED00026C903 /* AFSecurityPolicy.m */; };
+		BB85D05C1FA80ED00026C903 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D03B1FA80ED00026C903 /* AFURLConnectionOperation.m */; };
+		BB85D05D1FA80ED00026C903 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D03D1FA80ED00026C903 /* AFURLRequestSerialization.m */; };
+		BB85D05E1FA80ED00026C903 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D03F1FA80ED00026C903 /* AFURLResponseSerialization.m */; };
+		BB85D05F1FA80ED00026C903 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0411FA80ED00026C903 /* AFURLSessionManager.m */; };
+		BB85D0601FA80ED00026C903 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BB85D0421FA80ED00026C903 /* LICENSE */; };
+		BB85D0611FA80ED00026C903 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0431FA80ED00026C903 /* README.md */; };
+		BB85D0621FA80ED00026C903 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0461FA80ED00026C903 /* AFNetworkActivityIndicatorManager.m */; };
+		BB85D0631FA80ED00026C903 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0481FA80ED00026C903 /* UIActivityIndicatorView+AFNetworking.m */; };
+		BB85D0641FA80ED00026C903 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D04A1FA80ED00026C903 /* UIAlertView+AFNetworking.m */; };
+		BB85D0651FA80ED00026C903 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D04C1FA80ED00026C903 /* UIButton+AFNetworking.m */; };
+		BB85D0661FA80ED00026C903 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D04F1FA80ED00026C903 /* UIImageView+AFNetworking.m */; };
+		BB85D0671FA80ED00026C903 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0521FA80ED00026C903 /* UIProgressView+AFNetworking.m */; };
+		BB85D0681FA80ED00026C903 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0541FA80ED00026C903 /* UIRefreshControl+AFNetworking.m */; };
+		BB85D0691FA80ED00026C903 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0561FA80ED00026C903 /* UIWebView+AFNetworking.m */; };
+		BB85D06A1FA818880026C903 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0321FA80ED00026C903 /* AFHTTPRequestOperationManager.m */; };
+		BB85D06B1FA8189A0026C903 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85D0301FA80ED00026C903 /* AFHTTPRequestOperation.m */; };
+		BB9939A31FA15091007E3A3E /* CustomExerciseDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9939A01FA15091007E3A3E /* CustomExerciseDetailedViewController.swift */; };
+		BB9939A41FA15091007E3A3E /* CustomWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9939A11FA15091007E3A3E /* CustomWorkoutViewController.swift */; };
+		BB9939A51FA15091007E3A3E /* UserWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9939A21FA15091007E3A3E /* UserWorkoutViewController.swift */; };
+		BB9939A71FA1509C007E3A3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB9939A61FA1509C007E3A3E /* GoogleService-Info.plist */; };
+		BB9939A91FA15BC8007E3A3E /* StandardHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9939A81FA15BC8007E3A3E /* StandardHoursViewController.swift */; };
+		BB9939AB1FA167B8007E3A3E /* SummerHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9939AA1FA167B8007E3A3E /* SummerHoursViewController.swift */; };
+		BB9939AD1FA17438007E3A3E /* ExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9939AC1FA17438007E3A3E /* ExcerciseViewController.swift */; };
 		D11AC8ED1F720C3400A9C3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */; };
-		D11AC8EF1F720C3400A9C3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */; };
 		D11AC8F21F720C3400A9C3D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11AC8F01F720C3400A9C3D5 /* Main.storyboard */; };
 		D11AC8F41F720C3400A9C3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11AC8F31F720C3400A9C3D5 /* Assets.xcassets */; };
 		D11AC8F71F720C3500A9C3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11AC8F51F720C3400A9C3D5 /* LaunchScreen.storyboard */; };
@@ -20,19 +56,81 @@
 		D11AC90B1F735A0B00A9C3D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC90A1F735A0B00A9C3D5 /* LoginViewController.swift */; };
 		D11AC9111F735A2000A9C3D5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC9101F735A2000A9C3D5 /* SignUpViewController.swift */; };
 		D11AC9131F735C4B00A9C3D5 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11AC9121F735C4B00A9C3D5 /* ResetPasswordViewController.swift */; };
-		D1D5877F1F74AFDE007EF939 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D5877D1F74AFDE007EF939 /* HomePage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		521E23A4D2160C99E6625775 /* Pods-GYMBUDDY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYMBUDDY.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYMBUDDY/Pods-GYMBUDDY.release.xcconfig"; sourceTree = "<group>"; };
 		9804E3621F9860AA007D1173 /* DetailedWorkoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedWorkoutTableViewController.swift; sourceTree = "<group>"; };
 		9804E3631F9860AA007D1173 /* Home1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home1ViewController.swift; sourceTree = "<group>"; };
-		9804E3661F98622B007D1173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F4A1C13729DFBD97370EF0F /* Pods-GYMBUDDY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYMBUDDY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYMBUDDY/Pods-GYMBUDDY.debug.xcconfig"; sourceTree = "<group>"; };
 		B747F93567D3FFC3DC391690 /* Pods_GYMBUDDY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYMBUDDY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB33E3B41FA196D40067EEEA /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		BB33E3B61FA197430067EEEA /* BusinessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		BB33E3B81FA1981D0067EEEA /* BusinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
+		BB85CE921FA7F7FC0026C903 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "../../../Library/Developer/Xcode/DerivedData/GYMBUDDY-esdefzxcokxmkrfjapwuheotmjle/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
+		BB85CE941FA7F8030026C903 /* BDBOAuth1Manager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BDBOAuth1Manager.framework; path = "../../../Library/Developer/Xcode/DerivedData/GYMBUDDY-esdefzxcokxmkrfjapwuheotmjle/Build/Products/Debug-iphonesimulator/BDBOAuth1Manager/BDBOAuth1Manager.framework"; sourceTree = "<group>"; };
+		BB85CEAE1FA802CF0026C903 /* GYMBUDDY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GYMBUDDY-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB85CF4F1FA80A6A0026C903 /* BDBOAuth1RequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBOAuth1RequestOperationManager.h; sourceTree = "<group>"; };
+		BB85CF501FA80A6A0026C903 /* BDBOAuth1RequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBOAuth1RequestOperationManager.m; sourceTree = "<group>"; };
+		BB85CF511FA80A6A0026C903 /* BDBOAuth1RequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBOAuth1RequestSerializer.h; sourceTree = "<group>"; };
+		BB85CF521FA80A6A0026C903 /* BDBOAuth1RequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBOAuth1RequestSerializer.m; sourceTree = "<group>"; };
+		BB85CF531FA80A6A0026C903 /* BDBOAuth1SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBOAuth1SessionManager.h; sourceTree = "<group>"; };
+		BB85CF541FA80A6A0026C903 /* BDBOAuth1SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBOAuth1SessionManager.m; sourceTree = "<group>"; };
+		BB85CF561FA80A6A0026C903 /* NSDictionary+BDBOAuth1Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BDBOAuth1Manager.h"; sourceTree = "<group>"; };
+		BB85CF571FA80A6A0026C903 /* NSDictionary+BDBOAuth1Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BDBOAuth1Manager.m"; sourceTree = "<group>"; };
+		BB85CF581FA80A6A0026C903 /* NSString+BDBOAuth1Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BDBOAuth1Manager.h"; sourceTree = "<group>"; };
+		BB85CF591FA80A6A0026C903 /* NSString+BDBOAuth1Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BDBOAuth1Manager.m"; sourceTree = "<group>"; };
+		BB85CF5A1FA80A6A0026C903 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BB85CF5B1FA80A6A0026C903 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB85D02F1FA80ED00026C903 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		BB85D0301FA80ED00026C903 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		BB85D0311FA80ED00026C903 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = "../../../Downloads/Yelp-API-master/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h"; sourceTree = SOURCE_ROOT; };
+		BB85D0321FA80ED00026C903 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		BB85D0331FA80ED00026C903 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BB85D0341FA80ED00026C903 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		BB85D0351FA80ED00026C903 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		BB85D0361FA80ED00026C903 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		BB85D0371FA80ED00026C903 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		BB85D0381FA80ED00026C903 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		BB85D0391FA80ED00026C903 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		BB85D03A1FA80ED00026C903 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		BB85D03B1FA80ED00026C903 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		BB85D03C1FA80ED00026C903 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BB85D03D1FA80ED00026C903 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		BB85D03E1FA80ED00026C903 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BB85D03F1FA80ED00026C903 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BB85D0401FA80ED00026C903 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		BB85D0411FA80ED00026C903 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		BB85D0421FA80ED00026C903 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BB85D0431FA80ED00026C903 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB85D0451FA80ED00026C903 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		BB85D0461FA80ED00026C903 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		BB85D0471FA80ED00026C903 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D0481FA80ED00026C903 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		BB85D0491FA80ED00026C903 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D04A1FA80ED00026C903 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		BB85D04B1FA80ED00026C903 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D04C1FA80ED00026C903 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		BB85D04D1FA80ED00026C903 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D04E1FA80ED00026C903 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D04F1FA80ED00026C903 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		BB85D0501FA80ED00026C903 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D0511FA80ED00026C903 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D0521FA80ED00026C903 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		BB85D0531FA80ED00026C903 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D0541FA80ED00026C903 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		BB85D0551FA80ED00026C903 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		BB85D0561FA80ED00026C903 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		BB9939A01FA15091007E3A3E /* CustomExerciseDetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExerciseDetailedViewController.swift; sourceTree = "<group>"; };
+		BB9939A11FA15091007E3A3E /* CustomWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWorkoutViewController.swift; sourceTree = "<group>"; };
+		BB9939A21FA15091007E3A3E /* UserWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkoutViewController.swift; sourceTree = "<group>"; };
+		BB9939A61FA1509C007E3A3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB9939A81FA15BC8007E3A3E /* StandardHoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardHoursViewController.swift; sourceTree = "<group>"; };
+		BB9939AA1FA167B8007E3A3E /* SummerHoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummerHoursViewController.swift; sourceTree = "<group>"; };
+		BB9939AC1FA17438007E3A3E /* ExcerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseViewController.swift; sourceTree = "<group>"; };
+		BBFE2E071FA1916600B52CA5 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		D11AC8E91F720C3400A9C3D5 /* GYMBUDDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYMBUDDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D11AC8F11F720C3400A9C3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D11AC8F31F720C3400A9C3D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D11AC8F61F720C3500A9C3D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				942FEC8FE75E3F6039E0E26F /* Pods_GYMBUDDY.framework in Frameworks */,
+				0C645E6D442FFC3C2F41562C /* Pods_GYMBUDDY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +157,118 @@
 		1192A864066BCF4924905E92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB85CE941FA7F8030026C903 /* BDBOAuth1Manager.framework */,
+				BB85CE921FA7F7FC0026C903 /* AFNetworking.framework */,
 				B747F93567D3FFC3DC391690 /* Pods_GYMBUDDY.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB85CE971FA7F89F0026C903 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BBFE2E071FA1916600B52CA5 /* ApiClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		BB85CF4D1FA80A6A0026C903 /* BDBOAuth1Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BB85CF4E1FA80A6A0026C903 /* BDBOAuth1Manager */,
+				BB85CF5A1FA80A6A0026C903 /* LICENSE */,
+				BB85CF5B1FA80A6A0026C903 /* README.md */,
+			);
+			name = BDBOAuth1Manager;
+			path = "../../../Downloads/Yelp-API-master/Pods/BDBOAuth1Manager";
+			sourceTree = "<group>";
+		};
+		BB85CF4E1FA80A6A0026C903 /* BDBOAuth1Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BB85CF4F1FA80A6A0026C903 /* BDBOAuth1RequestOperationManager.h */,
+				BB85CF501FA80A6A0026C903 /* BDBOAuth1RequestOperationManager.m */,
+				BB85CF511FA80A6A0026C903 /* BDBOAuth1RequestSerializer.h */,
+				BB85CF521FA80A6A0026C903 /* BDBOAuth1RequestSerializer.m */,
+				BB85CF531FA80A6A0026C903 /* BDBOAuth1SessionManager.h */,
+				BB85CF541FA80A6A0026C903 /* BDBOAuth1SessionManager.m */,
+				BB85CF551FA80A6A0026C903 /* Categories */,
+			);
+			path = BDBOAuth1Manager;
+			sourceTree = "<group>";
+		};
+		BB85CF551FA80A6A0026C903 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BB85CF561FA80A6A0026C903 /* NSDictionary+BDBOAuth1Manager.h */,
+				BB85CF571FA80A6A0026C903 /* NSDictionary+BDBOAuth1Manager.m */,
+				BB85CF581FA80A6A0026C903 /* NSString+BDBOAuth1Manager.h */,
+				BB85CF591FA80A6A0026C903 /* NSString+BDBOAuth1Manager.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BB85D02D1FA80ED00026C903 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BB85D02E1FA80ED00026C903 /* AFNetworking */,
+				BB85D0421FA80ED00026C903 /* LICENSE */,
+				BB85D0431FA80ED00026C903 /* README.md */,
+				BB85D0441FA80ED00026C903 /* UIKit+AFNetworking */,
+			);
+			name = AFNetworking;
+			path = "../../../Downloads/Yelp-API-master/Pods/AFNetworking";
+			sourceTree = "<group>";
+		};
+		BB85D02E1FA80ED00026C903 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BB85D02F1FA80ED00026C903 /* AFHTTPRequestOperation.h */,
+				BB85D0301FA80ED00026C903 /* AFHTTPRequestOperation.m */,
+				BB85D0311FA80ED00026C903 /* AFHTTPRequestOperationManager.h */,
+				BB85D0321FA80ED00026C903 /* AFHTTPRequestOperationManager.m */,
+				BB85D0331FA80ED00026C903 /* AFHTTPSessionManager.h */,
+				BB85D0341FA80ED00026C903 /* AFHTTPSessionManager.m */,
+				BB85D0351FA80ED00026C903 /* AFNetworking.h */,
+				BB85D0361FA80ED00026C903 /* AFNetworkReachabilityManager.h */,
+				BB85D0371FA80ED00026C903 /* AFNetworkReachabilityManager.m */,
+				BB85D0381FA80ED00026C903 /* AFSecurityPolicy.h */,
+				BB85D0391FA80ED00026C903 /* AFSecurityPolicy.m */,
+				BB85D03A1FA80ED00026C903 /* AFURLConnectionOperation.h */,
+				BB85D03B1FA80ED00026C903 /* AFURLConnectionOperation.m */,
+				BB85D03C1FA80ED00026C903 /* AFURLRequestSerialization.h */,
+				BB85D03D1FA80ED00026C903 /* AFURLRequestSerialization.m */,
+				BB85D03E1FA80ED00026C903 /* AFURLResponseSerialization.h */,
+				BB85D03F1FA80ED00026C903 /* AFURLResponseSerialization.m */,
+				BB85D0401FA80ED00026C903 /* AFURLSessionManager.h */,
+				BB85D0411FA80ED00026C903 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		BB85D0441FA80ED00026C903 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BB85D0451FA80ED00026C903 /* AFNetworkActivityIndicatorManager.h */,
+				BB85D0461FA80ED00026C903 /* AFNetworkActivityIndicatorManager.m */,
+				BB85D0471FA80ED00026C903 /* UIActivityIndicatorView+AFNetworking.h */,
+				BB85D0481FA80ED00026C903 /* UIActivityIndicatorView+AFNetworking.m */,
+				BB85D0491FA80ED00026C903 /* UIAlertView+AFNetworking.h */,
+				BB85D04A1FA80ED00026C903 /* UIAlertView+AFNetworking.m */,
+				BB85D04B1FA80ED00026C903 /* UIButton+AFNetworking.h */,
+				BB85D04C1FA80ED00026C903 /* UIButton+AFNetworking.m */,
+				BB85D04D1FA80ED00026C903 /* UIImage+AFNetworking.h */,
+				BB85D04E1FA80ED00026C903 /* UIImageView+AFNetworking.h */,
+				BB85D04F1FA80ED00026C903 /* UIImageView+AFNetworking.m */,
+				BB85D0501FA80ED00026C903 /* UIKit+AFNetworking.h */,
+				BB85D0511FA80ED00026C903 /* UIProgressView+AFNetworking.h */,
+				BB85D0521FA80ED00026C903 /* UIProgressView+AFNetworking.m */,
+				BB85D0531FA80ED00026C903 /* UIRefreshControl+AFNetworking.h */,
+				BB85D0541FA80ED00026C903 /* UIRefreshControl+AFNetworking.m */,
+				BB85D0551FA80ED00026C903 /* UIWebView+AFNetworking.h */,
+				BB85D0561FA80ED00026C903 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
 		D11AC8E01F720C3400A9C3D5 = {
@@ -71,6 +278,9 @@
 				D11AC8EA1F720C3400A9C3D5 /* Products */,
 				DEAB02E42484A5BCC9A5C46C /* Pods */,
 				1192A864066BCF4924905E92 /* Frameworks */,
+				BB85CEAE1FA802CF0026C903 /* GYMBUDDY-Bridging-Header.h */,
+				BB85D02D1FA80ED00026C903 /* AFNetworking */,
+				BB85CF4D1FA80A6A0026C903 /* BDBOAuth1Manager */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +295,12 @@
 		D11AC8EB1F720C3400A9C3D5 /* GYMBUDDY */ = {
 			isa = PBXGroup;
 			children = (
-				9804E3661F98622B007D1173 /* GoogleService-Info.plist */,
+				BB85CE971FA7F89F0026C903 /* API */,
+				BB9939AC1FA17438007E3A3E /* ExcerciseViewController.swift */,
+				BB9939A61FA1509C007E3A3E /* GoogleService-Info.plist */,
+				BB9939A01FA15091007E3A3E /* CustomExerciseDetailedViewController.swift */,
+				BB9939A11FA15091007E3A3E /* CustomWorkoutViewController.swift */,
+				BB9939A21FA15091007E3A3E /* UserWorkoutViewController.swift */,
 				9804E3621F9860AA007D1173 /* DetailedWorkoutTableViewController.swift */,
 				9804E3631F9860AA007D1173 /* Home1ViewController.swift */,
 				D11AC9121F735C4B00A9C3D5 /* ResetPasswordViewController.swift */,
@@ -93,12 +308,16 @@
 				D11AC8EC1F720C3400A9C3D5 /* AppDelegate.swift */,
 				D11AC9101F735A2000A9C3D5 /* SignUpViewController.swift */,
 				D11AC90A1F735A0B00A9C3D5 /* LoginViewController.swift */,
-				D11AC8EE1F720C3400A9C3D5 /* ViewController.swift */,
 				D11AC8F01F720C3400A9C3D5 /* Main.storyboard */,
 				D1D5877D1F74AFDE007EF939 /* HomePage.storyboard */,
 				D11AC8F31F720C3400A9C3D5 /* Assets.xcassets */,
 				D11AC8F51F720C3400A9C3D5 /* LaunchScreen.storyboard */,
 				D11AC8F81F720C3500A9C3D5 /* Info.plist */,
+				BB9939A81FA15BC8007E3A3E /* StandardHoursViewController.swift */,
+				BB9939AA1FA167B8007E3A3E /* SummerHoursViewController.swift */,
+				BB33E3B41FA196D40067EEEA /* Business.swift */,
+				BB33E3B61FA197430067EEEA /* BusinessCell.swift */,
+				BB33E3B81FA1981D0067EEEA /* BusinessViewController.swift */,
 			);
 			path = GYMBUDDY;
 			sourceTree = "<group>";
@@ -148,6 +367,7 @@
 					D11AC8E81F720C3400A9C3D5 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 65ZG9A9ZUZ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -175,9 +395,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D5877F1F74AFDE007EF939 /* HomePage.storyboard in Resources */,
+				BB85CEA51FA7FF2C0026C903 /* HomePage.storyboard in Resources */,
 				D11AC8F71F720C3500A9C3D5 /* LaunchScreen.storyboard in Resources */,
-				9804E3671F98622B007D1173 /* GoogleService-Info.plist in Resources */,
+				BB85CF611FA80A6A0026C903 /* LICENSE in Resources */,
+				BB85D0601FA80ED00026C903 /* LICENSE in Resources */,
+				BB9939A71FA1509C007E3A3E /* GoogleService-Info.plist in Resources */,
 				D11AC8F41F720C3400A9C3D5 /* Assets.xcassets in Resources */,
 				D11AC8F21F720C3400A9C3D5 /* Main.storyboard in Resources */,
 			);
@@ -240,7 +462,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -250,14 +472,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D11AC8EF1F720C3400A9C3D5 /* ViewController.swift in Sources */,
+				BB85D05B1FA80ED00026C903 /* AFSecurityPolicy.m in Sources */,
+				BB85CEA61FA8000F0026C903 /* BusinessViewController.swift in Sources */,
+				BB85D0681FA80ED00026C903 /* UIRefreshControl+AFNetworking.m in Sources */,
+				BB9939A91FA15BC8007E3A3E /* StandardHoursViewController.swift in Sources */,
+				BB85CF5D1FA80A6A0026C903 /* BDBOAuth1RequestSerializer.m in Sources */,
+				BB85CF5E1FA80A6A0026C903 /* BDBOAuth1SessionManager.m in Sources */,
+				BB85D05C1FA80ED00026C903 /* AFURLConnectionOperation.m in Sources */,
+				BB85D0631FA80ED00026C903 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				BB85CF5C1FA80A6A0026C903 /* BDBOAuth1RequestOperationManager.m in Sources */,
 				9804E3641F9860AA007D1173 /* DetailedWorkoutTableViewController.swift in Sources */,
+				BB85D0661FA80ED00026C903 /* UIImageView+AFNetworking.m in Sources */,
+				BB85CF601FA80A6A0026C903 /* NSString+BDBOAuth1Manager.m in Sources */,
+				BB85D0611FA80ED00026C903 /* README.md in Sources */,
+				BB85D05F1FA80ED00026C903 /* AFURLSessionManager.m in Sources */,
+				BB85D0641FA80ED00026C903 /* UIAlertView+AFNetworking.m in Sources */,
+				BB9939A51FA15091007E3A3E /* UserWorkoutViewController.swift in Sources */,
+				BB85CEAA1FA8003B0026C903 /* ApiClient.swift in Sources */,
+				BB85CF5F1FA80A6A0026C903 /* NSDictionary+BDBOAuth1Manager.m in Sources */,
+				BB85D0691FA80ED00026C903 /* UIWebView+AFNetworking.m in Sources */,
 				D11AC9111F735A2000A9C3D5 /* SignUpViewController.swift in Sources */,
+				BB85CEA81FA800160026C903 /* Business.swift in Sources */,
+				BB85D05E1FA80ED00026C903 /* AFURLResponseSerialization.m in Sources */,
+				BB85D06A1FA818880026C903 /* AFHTTPRequestOperationManager.m in Sources */,
+				BB85CEA71FA800130026C903 /* BusinessCell.swift in Sources */,
+				BB85D0651FA80ED00026C903 /* UIButton+AFNetworking.m in Sources */,
+				BB9939AD1FA17438007E3A3E /* ExcerciseViewController.swift in Sources */,
+				BB85D0671FA80ED00026C903 /* UIProgressView+AFNetworking.m in Sources */,
 				D11AC8ED1F720C3400A9C3D5 /* AppDelegate.swift in Sources */,
+				BB9939A31FA15091007E3A3E /* CustomExerciseDetailedViewController.swift in Sources */,
+				BB85CF621FA80A6A0026C903 /* README.md in Sources */,
+				BB85D0621FA80ED00026C903 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				BB85D05A1FA80ED00026C903 /* AFNetworkReachabilityManager.m in Sources */,
 				D11AC9131F735C4B00A9C3D5 /* ResetPasswordViewController.swift in Sources */,
+				BB9939AB1FA167B8007E3A3E /* SummerHoursViewController.swift in Sources */,
+				BB85D06B1FA8189A0026C903 /* AFHTTPRequestOperation.m in Sources */,
 				9804E3651F9860AA007D1173 /* Home1ViewController.swift in Sources */,
 				D11AC90B1F735A0B00A9C3D5 /* LoginViewController.swift in Sources */,
+				BB9939A41FA15091007E3A3E /* CustomWorkoutViewController.swift in Sources */,
+				BB85D05D1FA80ED00026C903 /* AFURLRequestSerialization.m in Sources */,
 				D11AC9091F735A0600A9C3D5 /* HomeViewController.swift in Sources */,
+				BB85D0591FA80ED00026C903 /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,11 +644,14 @@
 			baseConfigurationReference = 9F4A1C13729DFBD97370EF0F /* Pods-GYMBUDDY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 65ZG9A9ZUZ;
 				INFOPLIST_FILE = GYMBUDDY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GYMBUDDY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GYMBUDDY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -403,11 +661,13 @@
 			baseConfigurationReference = 521E23A4D2160C99E6625775 /* Pods-GYMBUDDY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 65ZG9A9ZUZ;
 				INFOPLIST_FILE = GYMBUDDY/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.GYMBUDDY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GYMBUDDY-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

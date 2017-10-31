@@ -25,7 +25,7 @@ class Home1ViewController: UIViewController, UITableViewDataSource, UITableViewD
     var FilteredWorkoutNames = [String]()
     var myIndex1 = 0
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //return (list1.count);
         if isFiltering() {
             return FilteredWorkoutNames.count
@@ -50,7 +50,7 @@ class Home1ViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
 
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         var workout = String()
         if isFiltering() {

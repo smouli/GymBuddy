@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/Yelp-API-master/Yelp/YelpClient.swift"
+            timestampString = "531102562.28327"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/Yelp-API-master/Yelp/YelpClient.swift"
+            timestampString = "531102573.19737"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "YelpSortMode"
+            landmarkType = "13">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Downloads/Yelp-API-master/Yelp/YelpClient.swift"
+            timestampString = "531102576.289868"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "init(coder:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GYMBUDDY/BusinessViewController.swift"
+            timestampString = "531107844.508776"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "BusinessViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GYMBUDDY.BusinessViewController.businesses.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;GYMBUDDY.Business&gt;&gt;"
+                  moduleName = "GYMBUDDY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harshalingareddy/Desktop/CS-408/GYMBUDDY/GYMBUDDY/BusinessViewController.swift"
+                  timestampString = "531116524.170188"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GYMBUDDY.BusinessViewController.businesses.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.Array&lt;GYMBUDDY.Business&gt;&gt;"
+                  moduleName = "GYMBUDDY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harshalingareddy/Desktop/CS-408/GYMBUDDY/GYMBUDDY/BusinessViewController.swift"
+                  timestampString = "531116524.17269"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "61">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GYMBUDDY.BusinessViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; GYMBUDDY.BusinessViewController"
+                  moduleName = "GYMBUDDY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harshalingareddy/Desktop/CS-408/GYMBUDDY/GYMBUDDY/BusinessViewController.swift"
+                  timestampString = "531116524.177"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GYMBUDDY.BusinessViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;GYMBUDDY.BusinessViewController&gt;"
+                  moduleName = "GYMBUDDY"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/harshalingareddy/Desktop/CS-408/GYMBUDDY/GYMBUDDY/BusinessViewController.swift"
+                  timestampString = "531116524.181404"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

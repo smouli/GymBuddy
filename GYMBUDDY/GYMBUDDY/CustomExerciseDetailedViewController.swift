@@ -20,13 +20,13 @@ class CustomExerciseDetailedViewController: UIViewController, UITableViewDataSou
     var myIndex1 = 0
     var currentWorkout1: String = ""
 
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //return (list1.count);
         
         return(WorkoutNames.count)
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cellcustom")
         var workout = String()
         workout = WorkoutNames[indexPath.row]
